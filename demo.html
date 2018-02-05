@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>demo</title>
+    <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="lib/seen.min.js"></script>
+    <script src="gen.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <canvas data-alg="U"></canvas>
+    <canvas data-alg="R"></canvas>
+    <canvas data-alg="F"></canvas>
+    <canvas data-alg="D"></canvas>
+    <canvas data-alg="L"></canvas>
+    <canvas data-alg="B"></canvas>
+    <canvas data-alg="E"></canvas>
+    <canvas data-alg="M"></canvas>
+    <canvas data-alg="S"></canvas>
+    <hr />
+    <canvas data-alg="R2 U R U R' U' R' U' R' U R'"></canvas>
+    <canvas data-alg="R U' R U R U R U' R' U' R2"></canvas>
+    <canvas data-alg="M2 U M2 U2 M2 U M2"></canvas>
+    <canvas data-alg="U' M' U M2 U M2 U M' U2 M2"></canvas>
+    <canvas data-alg="x' R U' R D2 R' U R D2 R2 x"></canvas>
+    <canvas data-alg="x R' U R' D2 R U' R' D2 R2 x'"></canvas>
+    <canvas data-alg="R U R' F' R U R' U' R' F R2 U' R' "></canvas>
+    <canvas data-alg="L' U R' z R2 U R' U' R2 U D z'"></canvas>
+    <canvas data-alg="R U R' U' R' F R2 U' R' U' R U R' F'"></canvas>
+    <canvas data-alg="F R U' R' U' R U R' F' R U R' U' R' F R F' "></canvas>
+    <canvas data-alg="R' U2 R U2 R' F R U R' U' R' F' R2"></canvas>
+    <canvas data-alg="R U' R' U' R U R D R' U' R D' R' U2 R' "></canvas>
+    <canvas data-alg="R' U R U' R' F' U' F R U R' F R' F' R U' R"></canvas>
+    <canvas data-alg="z R' U R' D R2 U' R U D' R' D R2 U' R D' z'"></canvas>
+    <canvas data-alg="x' R U' R' D R U R' D' R U R' D R U' R' D' x"></canvas>
+    <canvas data-alg="R' U R' U' y R' F' R2 U' R' U R' F R F y'"></canvas>
+    <canvas data-alg="U' R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R"></canvas>
+    <canvas data-alg="R U R' y' R2 Uw' R U' R' U R' Uw R2 y"></canvas>
+    <canvas data-alg="U2 R2 F2 R U2 R U2' R' F R U R' U' R' F R2"></canvas>
+    <canvas data-alg="R2 Uw R' U R' U' R Uw' R2 y' R' U R y"></canvas>
+    <canvas data-alg="R' U' R y R2 Uw R' U R U' R Uw' R2 y'"></canvas>
+    <hr />
+    <canvas data-cube="2" data-alg="R2F2R2"></canvas>
+    <canvas data-cube="4" data-alg="r2 U2 r2 Uw2 r2 U2 Uw2"></canvas>
+    <canvas data-cube="4" data-stage="oll" data-alg="Rw2 B2 U2 Lw U2 Rw' U2 Rw U2 F2 Rw F2 Lw' B2 Rw2 "></canvas>
+    <canvas data-cube="4" data-alg="Rw2 B2 Rw' U2 Rw' U2 x' U2 Rw' U2 Rw U2 Rw' U2 Rw2 U2x"></canvas>
+    <canvas data-cube="5" data-alg="Rw2 F2 U2 r2 U2F2Rw2"></canvas>
+    <canvas data-stage="f2l" data-alg="RURURU'R'U'R'"></canvas>
+    <canvas data-stage="3_f2l_1" data-alg="R U'R2 U R"></canvas>
+    <hr />
+    <canvas data-stage="oll" data-alg="RUR'URU2R2U'RU'R'U2R"></canvas>
+    <canvas data-stage="oll" data-alg="RUR'URU2R'"></canvas>
+    <canvas data-stage="oll" data-alg="RU2R2U'R2U'R2U2R"></canvas>
+    <canvas data-stage="oll" data-alg="F'RwUR'U'Rw'FR"></canvas>
+    <canvas data-stage="oll" data-alg="RUR'U'M'URU'Rw'"></canvas>
+    <canvas data-stage="oll" data-alg="FRUR'U'F'"></canvas>
+    <canvas data-stage="oll" data-alg="R'FRUR'U'F'UR"></canvas>
+    <canvas data-stage="oll" data-alg="R'U'R'FRF'UR"></canvas>
+    <canvas data-stage="oll" data-alg="Rw'URwURw'U'LUF'U'x"></canvas>
+    <canvas data-stage="oll" data-alg="RwURw'RUR'U'RwU'Rw'"></canvas>
+    <canvas data-stage="oll" data-alg="U'R'FRURU'R2F'R2U'R'URUR'"></canvas>
+    <canvas data-stage="oll" data-alg="Rw'U'RwU'R'URU'R'URRw'URw"></canvas>
+    <canvas data-stage="oll" data-alg="U2FURU'R'F'"></canvas>
+    <canvas data-stage="oll" data-alg="RUB'U'R'URBR'"></canvas>
+    <canvas data-stage="oll" data-alg="RUR'URU'R'U'R'FRF'"></canvas>
+    <canvas data-stage="oll" data-alg="RwUR'URU'R'URU2Rw'"></canvas>
+    <canvas data-stage="oll" data-alg="FRUR'U'RUR'U'F'"></canvas>
+    <canvas data-stage="oll" data-alg="RB'R2FR2BR2F'R"></canvas>
+    <canvas data-stage="oll" data-alg="FRU'R'U'RUR'F'"></canvas>
+    <canvas data-stage="oll" data-alg="RwU2R'U'RU'Rw'"></canvas>
+    <canvas data-stage="oll" data-alg="RwUR'URU2Rw'"></canvas>
+    <canvas data-stage="oll" data-alg="RwR2U'RU'R'U2RU'Rw'R"></canvas>
+    <canvas data-stage="oll" data-alg="RUR'yR'FRU'R'F'Ry'"></canvas>
+    <canvas data-stage="oll" data-alg="R'FRF'RU2R'U'F'U'F"></canvas>
+    <canvas data-stage="oll" data-alg="RUR'URU'R'URU'R'U'R'FRF'"></canvas>
+    <canvas data-stage="oll" data-alg="MURUR'U'M2URU'Rw'"></canvas>
+    <canvas data-stage="oll" data-alg="MURUR'U'RwR2FRF'"></canvas>
+    <canvas data-stage="oll" data-alg="FwRUR'U'Fw'U'FRUR'U'F'"></canvas>
+    <canvas data-stage="oll" data-alg="FRUR'U'F'FwRUR'U'Fw'"></canvas>
+    <canvas data-stage="oll" data-alg="R'U'RU'R'U2R"></canvas>
+    <canvas data-stage="oll" data-alg="RU2R'U'RUR'U'RU'R'"></canvas>
+    <canvas data-stage="oll" data-alg="RwUR'U'Rw'FRF'"></canvas>
+    <canvas data-stage="oll" data-alg="M'UMU2M'UM"></canvas>
+    <canvas data-stage="oll" data-alg="RUR'U'R'FRF'"></canvas>
+    <canvas data-stage="oll" data-alg="LF'L'U'LUFU'L'"></canvas>
+    <canvas data-stage="oll" data-alg="RUR'U'xD'R'URU'Dx'"></canvas>
+    <canvas data-stage="oll" data-alg="LwU'Lw'U'LwUR'U'FUx"></canvas>
+    <canvas data-stage="oll" data-alg="Lw'U'LwL'U'LULw'ULw"></canvas>
+    <canvas data-stage="oll" data-alg="R'U'RU'R'Uy'R'URBy"></canvas>
+    <canvas data-stage="oll" data-alg="FURU'R'URU'R'F'"></canvas>
+    <canvas data-stage="oll" data-alg="U'R'U'F'UFR"></canvas>
+    <canvas data-stage="oll" data-alg="R'U'FURU'R'F'R"></canvas>
+    <canvas data-stage="oll" data-alg="R'U'RU'R'URURB'R'B"></canvas>
+    <canvas data-stage="oll" data-alg="Rw'U'RU'R'URU'R'U2Rw"></canvas>
+    <canvas data-stage="oll" data-alg="R'U'l'URU'R'URU'x'UR"></canvas>
+    <canvas data-stage="oll" data-alg="U2Rw'URw2U'Rw2U'Rw2URw'"></canvas>
+    <canvas data-stage="oll" data-alg="RU2R2'FRF'RU2R'"></canvas>
+    <canvas data-stage="oll" data-alg="Rw'U2RUR'URw"></canvas>
+    <canvas data-stage="oll" data-alg="Rw'U'RU'R'U2Rw"></canvas>
+    <canvas data-stage="oll" data-alg="Rw'R2UR'URU2R'URwR'"></canvas>
+    <canvas data-stage="oll" data-alg="RUR'U'R'FR2UR'U'F'"></canvas>
+    <canvas data-stage="oll" data-alg="R2'UR'B'RU'R2'URBR'"></canvas>
+    <canvas data-stage="oll" data-alg="R'FRF'R'FRF'RUR'U'RUR'"></canvas>
+    <canvas data-stage="oll" data-alg="RUR'UR'FRF'U2R'FRF'"></canvas>
+    <canvas data-stage="oll" data-alg="U'RwUR'URU2Rw2'U'RU'R'U2Rw"></canvas>
+    <canvas data-stage="oll" data-alg="FwRUR'U'Fw'UFRUR'U'F'"></canvas>
+    <canvas data-stage="oll" data-alg="RU2R2'FRF'U2'R'FRF'"></canvas>
+  </body>
+</html>
